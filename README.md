@@ -5,5 +5,7 @@ This is the Amazon Mobile Ads iOS SDK Swift samples using using a bridged object
 
 # Get Started
 Clone project
+
 > cd examples
+
 > open AmazonAdSampleApps.xcworkspace
