@@ -1,0 +1,390 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		71C4ACAC1D6E384900B31F71 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71C4ACAB1D6E384900B31F71 /* SafariServices.framework */; };
+		71F1DAEC1D6E3B31008B758E /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71F1DAEB1D6E3B31008B758E /* JavaScriptCore.framework */; };
+		EC1F5E701A2FAFF50000E0AF /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC1F5E6F1A2FAFF50000E0AF /* StoreKit.framework */; };
+		EC3759841A2F9AD100918F84 /* AmazonAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC3759831A2F9AD100918F84 /* AmazonAd.framework */; };
+		EC6657CC1A031BF200678CF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6657CB1A031BF200678CF2 /* AppDelegate.swift */; };
+		EC6657CE1A031BF200678CF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6657CD1A031BF200678CF2 /* ViewController.swift */; };
+		EC6657D11A031BF200678CF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC6657CF1A031BF200678CF2 /* Main.storyboard */; };
+		EC6657D31A031BF200678CF2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC6657D21A031BF200678CF2 /* Images.xcassets */; };
+		EC99F5121A30F693009466EB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC99F5111A30F693009466EB /* CoreGraphics.framework */; };
+		EC9D472E1A0404C1007BFEE7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9D47241A0404C1007BFEE7 /* Foundation.framework */; };
+		EC9D472F1A0404C1007BFEE7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9D47251A0404C1007BFEE7 /* UIKit.framework */; };
+		EC9D47301A0404C1007BFEE7 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9D47261A0404C1007BFEE7 /* AdSupport.framework */; };
+		EC9D47311A0404C1007BFEE7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9D47271A0404C1007BFEE7 /* CoreLocation.framework */; };
+		EC9D47321A0404C1007BFEE7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9D47281A0404C1007BFEE7 /* SystemConfiguration.framework */; };
+		EC9D47331A0404C1007BFEE7 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9D47291A0404C1007BFEE7 /* MediaPlayer.framework */; };
+		EC9D47371A0404C1007BFEE7 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9D472D1A0404C1007BFEE7 /* CoreTelephony.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		71C4ACAB1D6E384900B31F71 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		71F1DAEB1D6E3B31008B758E /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		EC1F5E6F1A2FAFF50000E0AF /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		EC3759831A2F9AD100918F84 /* AmazonAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AmazonAd.framework; path = ../AmazonAd/AmazonAd.framework; sourceTree = "<group>"; };
+		EC6657C61A031BF200678CF2 /* SimpleAdUniversalSample_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleAdUniversalSample_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC6657CA1A031BF200678CF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC6657CB1A031BF200678CF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EC6657CD1A031BF200678CF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EC6657D01A031BF200678CF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC6657D21A031BF200678CF2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EC99F5111A30F693009466EB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EC9D471E1A040461007BFEE7 /* SimpleAdUniversalSample_Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleAdUniversalSample_Swift-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		EC9D47241A0404C1007BFEE7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EC9D47251A0404C1007BFEE7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EC9D47261A0404C1007BFEE7 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		EC9D47271A0404C1007BFEE7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		EC9D47281A0404C1007BFEE7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		EC9D47291A0404C1007BFEE7 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		EC9D472D1A0404C1007BFEE7 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC6657C31A031BF200678CF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71F1DAEC1D6E3B31008B758E /* JavaScriptCore.framework in Frameworks */,
+				71C4ACAC1D6E384900B31F71 /* SafariServices.framework in Frameworks */,
+				EC99F5121A30F693009466EB /* CoreGraphics.framework in Frameworks */,
+				EC1F5E701A2FAFF50000E0AF /* StoreKit.framework in Frameworks */,
+				EC3759841A2F9AD100918F84 /* AmazonAd.framework in Frameworks */,
+				EC9D47371A0404C1007BFEE7 /* CoreTelephony.framework in Frameworks */,
+				EC9D47311A0404C1007BFEE7 /* CoreLocation.framework in Frameworks */,
+				EC9D47301A0404C1007BFEE7 /* AdSupport.framework in Frameworks */,
+				EC9D47331A0404C1007BFEE7 /* MediaPlayer.framework in Frameworks */,
+				EC9D472F1A0404C1007BFEE7 /* UIKit.framework in Frameworks */,
+				EC9D47321A0404C1007BFEE7 /* SystemConfiguration.framework in Frameworks */,
+				EC9D472E1A0404C1007BFEE7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		719B879B1DA573A6004EFBB7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				71F1DAEB1D6E3B31008B758E /* JavaScriptCore.framework */,
+				71C4ACAB1D6E384900B31F71 /* SafariServices.framework */,
+				EC99F5111A30F693009466EB /* CoreGraphics.framework */,
+				EC1F5E6F1A2FAFF50000E0AF /* StoreKit.framework */,
+				EC3759831A2F9AD100918F84 /* AmazonAd.framework */,
+				EC9D47241A0404C1007BFEE7 /* Foundation.framework */,
+				EC9D47251A0404C1007BFEE7 /* UIKit.framework */,
+				EC9D47261A0404C1007BFEE7 /* AdSupport.framework */,
+				EC9D47271A0404C1007BFEE7 /* CoreLocation.framework */,
+				EC9D47281A0404C1007BFEE7 /* SystemConfiguration.framework */,
+				EC9D47291A0404C1007BFEE7 /* MediaPlayer.framework */,
+				EC9D472D1A0404C1007BFEE7 /* CoreTelephony.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC6657BD1A031BF200678CF2 = {
+			isa = PBXGroup;
+			children = (
+				EC6657C81A031BF200678CF2 /* SimpleAdUniversalSample_Swift */,
+				EC6657C71A031BF200678CF2 /* Products */,
+				719B879B1DA573A6004EFBB7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EC6657C71A031BF200678CF2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC6657C61A031BF200678CF2 /* SimpleAdUniversalSample_Swift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC6657C81A031BF200678CF2 /* SimpleAdUniversalSample_Swift */ = {
+			isa = PBXGroup;
+			children = (
+				EC6657CB1A031BF200678CF2 /* AppDelegate.swift */,
+				EC6657CD1A031BF200678CF2 /* ViewController.swift */,
+				EC9D471E1A040461007BFEE7 /* SimpleAdUniversalSample_Swift-Bridging-Header.h */,
+				EC6657CF1A031BF200678CF2 /* Main.storyboard */,
+				EC6657D21A031BF200678CF2 /* Images.xcassets */,
+				EC6657C91A031BF200678CF2 /* Supporting Files */,
+			);
+			path = SimpleAdUniversalSample_Swift;
+			sourceTree = "<group>";
+		};
+		EC6657C91A031BF200678CF2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC6657CA1A031BF200678CF2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC6657C51A031BF200678CF2 /* SimpleAdUniversalSample_Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC6657E51A031BF200678CF2 /* Build configuration list for PBXNativeTarget "SimpleAdUniversalSample_Swift" */;
+			buildPhases = (
+				EC6657C21A031BF200678CF2 /* Sources */,
+				EC6657C31A031BF200678CF2 /* Frameworks */,
+				EC6657C41A031BF200678CF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleAdUniversalSample_Swift;
+			productName = SimpleAdUniversalSample_Swift;
+			productReference = EC6657C61A031BF200678CF2 /* SimpleAdUniversalSample_Swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC6657BE1A031BF200678CF2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Zhao, Xing";
+				TargetAttributes = {
+					EC6657C51A031BF200678CF2 = {
+						CreatedOnToolsVersion = 6.1;
+						LastSwiftMigration = 0800;
+					};
+				};
+			};
+			buildConfigurationList = EC6657C11A031BF200678CF2 /* Build configuration list for PBXProject "SimpleAdUniversalSample_Swift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC6657BD1A031BF200678CF2;
+			productRefGroup = EC6657C71A031BF200678CF2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC6657C51A031BF200678CF2 /* SimpleAdUniversalSample_Swift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC6657C41A031BF200678CF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC6657D11A031BF200678CF2 /* Main.storyboard in Resources */,
+				EC6657D31A031BF200678CF2 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC6657C21A031BF200678CF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC6657CE1A031BF200678CF2 /* ViewController.swift in Sources */,
+				EC6657CC1A031BF200678CF2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EC6657CF1A031BF200678CF2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC6657D01A031BF200678CF2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC6657E31A031BF200678CF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EC6657E41A031BF200678CF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC6657E61A031BF200678CF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../AmazonAd\"",
+				);
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
+				INFOPLIST_FILE = SimpleAdUniversalSample_Swift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Amazon.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SimpleAdUniversalSample_Swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC6657E71A031BF200678CF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../AmazonAd\"",
+				);
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
+				INFOPLIST_FILE = SimpleAdUniversalSample_Swift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Amazon.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SimpleAdUniversalSample_Swift-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC6657C11A031BF200678CF2 /* Build configuration list for PBXProject "SimpleAdUniversalSample_Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC6657E31A031BF200678CF2 /* Debug */,
+				EC6657E41A031BF200678CF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC6657E51A031BF200678CF2 /* Build configuration list for PBXNativeTarget "SimpleAdUniversalSample_Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC6657E61A031BF200678CF2 /* Debug */,
+				EC6657E71A031BF200678CF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC6657BE1A031BF200678CF2 /* Project object */;
+}

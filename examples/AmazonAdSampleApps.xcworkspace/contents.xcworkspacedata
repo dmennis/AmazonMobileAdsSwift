@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:FloatingAdUniversalSample_Swift/FloatingAdUniversalSample_Swift.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SimpleAdUniversalSample_Swift/SimpleAdUniversalSample_Swift.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:InterstitialAdUniversalSample_Swift/InterstitialAdUniversalSample_Swift.xcodeproj">
+   </FileRef>
+</Workspace>

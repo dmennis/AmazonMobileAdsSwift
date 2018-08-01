@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="FloatingAdUniversalSample_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="c9O-EV-Odm">
+                                <rect key="frame" x="155" y="58" width="290" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="cUk-4G-lu6"/>
+                                    <constraint firstAttribute="width" constant="290" id="fL4-SP-epu"/>
+                                </constraints>
+                                <string key="text">This is a simple universal app for testing ad loading capabilities of the Amazon Mobile Ads SDK. This app demonstrates ad loading, expanding and collapsing along with device rotation.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBe-JV-umv">
+                                <rect key="frame" x="257" y="20" width="86" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="86" id="NOX-8d-ExY"/>
+                                </constraints>
+                                <state key="normal" title="Load Ad">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loadAmazonAd:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="aTB-QL-obi"/>
+                                </connections>
+                            </button>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Chg-fS-38L">
+                                <rect key="frame" x="0.0" y="133" width="600" height="467"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="gBe-JV-umv" secondAttribute="centerX" id="5SK-iZ-M0b"/>
+                            <constraint firstItem="c9O-EV-Odm" firstAttribute="top" secondItem="gBe-JV-umv" secondAttribute="bottom" constant="8" symbolic="YES" id="8Nq-sK-6Un"/>
+                            <constraint firstAttribute="centerX" secondItem="Chg-fS-38L" secondAttribute="centerX" id="98M-Vy-5tV"/>
+                            <constraint firstItem="Chg-fS-38L" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="9S0-by-nZt"/>
+                            <constraint firstAttribute="centerX" secondItem="gBe-JV-umv" secondAttribute="centerX" id="PKm-nU-W5U"/>
+                            <constraint firstItem="Chg-fS-38L" firstAttribute="top" secondItem="c9O-EV-Odm" secondAttribute="bottom" constant="15" id="TF0-aQ-Kdo"/>
+                            <constraint firstItem="Chg-fS-38L" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="Xdm-qf-UjT"/>
+                            <constraint firstItem="gBe-JV-umv" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="Xu1-po-oNv"/>
+                            <constraint firstAttribute="centerX" secondItem="c9O-EV-Odm" secondAttribute="centerX" id="dOM-jB-gMG"/>
+                            <constraint firstAttribute="centerX" secondItem="Chg-fS-38L" secondAttribute="centerX" id="fzQ-ny-msA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loadAdButton" destination="gBe-JV-umv" id="d4r-Rs-LCt"/>
+                        <outlet property="webView" destination="Chg-fS-38L" id="K73-Hh-3PI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

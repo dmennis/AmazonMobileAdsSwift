@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="InterstitialAdUniversalSample_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q5o-c7-ifa">
+                                <rect key="frame" x="189" y="427" width="58" height="30"/>
+                                <state key="normal" title="Load Ad">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loadAmazonInterstitial:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="IDX-fC-1H1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UqK-9v-Lq0">
+                                <rect key="frame" x="350" y="427" width="62" height="30"/>
+                                <state key="normal" title="Show Ad">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showAmazonInterstitial:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="kHp-tU-2Th"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rw6-CF-WG7">
+                                <rect key="frame" x="160" y="477" width="280" height="103"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="G3b-lK-J85"/>
+                                    <constraint firstAttribute="height" constant="103" id="ZZE-5V-IzF"/>
+                                </constraints>
+                                <string key="text">This is a simple app for testing interstitial ad loading capabilities of the Amazon Mobile Ads SDK. This app demonstrates interstitial ad loading, presenting and dismissing along with device rotation.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Interstial Loaded" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Riw-E3-UIv">
+                                <rect key="frame" x="222" y="398" width="156" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Riw-E3-UIv" secondAttribute="centerX" id="2ev-W8-fzy"/>
+                            <constraint firstItem="Q5o-c7-ifa" firstAttribute="baseline" secondItem="UqK-9v-Lq0" secondAttribute="baseline" id="MPn-rp-eIx"/>
+                            <constraint firstAttribute="centerX" secondItem="UqK-9v-Lq0" secondAttribute="centerX" constant="-81" id="dIE-MP-hfa"/>
+                            <constraint firstItem="rw6-CF-WG7" firstAttribute="centerX" secondItem="Riw-E3-UIv" secondAttribute="centerX" id="e1v-fq-bGm"/>
+                            <constraint firstAttribute="bottom" secondItem="Q5o-c7-ifa" secondAttribute="bottom" constant="143" id="iuC-Dy-XI7"/>
+                            <constraint firstAttribute="centerX" secondItem="Q5o-c7-ifa" secondAttribute="centerX" constant="82" id="jrx-fn-P3f"/>
+                            <constraint firstItem="Q5o-c7-ifa" firstAttribute="top" secondItem="Riw-E3-UIv" secondAttribute="bottom" constant="8" symbolic="YES" id="s9o-Xh-yic"/>
+                            <constraint firstAttribute="bottom" secondItem="rw6-CF-WG7" secondAttribute="bottom" constant="20" symbolic="YES" id="zEc-hl-xyk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loadAdButton" destination="Q5o-c7-ifa" id="OB1-Xc-fau"/>
+                        <outlet property="loadStatusLabel" destination="Riw-E3-UIv" id="f9O-BZ-5jD"/>
+                        <outlet property="showAdButton" destination="UqK-9v-Lq0" id="rQR-XU-Ej6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
